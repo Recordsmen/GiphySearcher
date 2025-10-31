@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GiphySearcher</string>
+
+    <string name="home_title">GIF Home</string>
+    <string name="detail_title_default">GIF Details</string>
+    <string name="content_description_back">Navigate back</string>
+    <string name="detail_error_not_found">GIF not found.</string>
+    <string name="network_your_are_offline">You are offline. Please check your connection.</string>
+
+    <string name="error_network_oops">Oops! Network Error.</string>
+    <string name="error_data_load_failed">Could not load data. Check your connection.</string>
+    <string name="action_retry">Retry</string>
+    <string name="content_description_refresh">Retry button</string>
+
+    <string name="empty_search_start">Start searching for GIFs!</string>
+    <string name="empty_search_no_results">No results found for \"%s\".</string>
+
+    <string name="search_bar_label">Search Giphy…</string>
+    <string name="gif_id">Id: %s</string>
+    <string name="content_description_search_icon">Search Icon</string>
+    <string name="action_loading_more_retry">Error loading more. Tap to Retry.</string>
+</resources>
