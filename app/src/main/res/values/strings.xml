@@ -16,7 +16,6 @@
     <string name="empty_search_no_results">No results found for \"%s\".</string>
 
     <string name="search_bar_label">Search Giphy…</string>
-    <string name="gif_id">Id: %s</string>
     <string name="content_description_search_icon">Search Icon</string>
     <string name="action_loading_more_retry">Error loading more. Tap to Retry.</string>
 </resources>
