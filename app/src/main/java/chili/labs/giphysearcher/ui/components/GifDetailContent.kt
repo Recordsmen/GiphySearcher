@@ -9,21 +9,25 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import chili.labs.giphysearcher.network.domain.GifModel
 import coil.compose.AsyncImage
+import coil.decode.ImageDecoderDecoder
+import coil.request.ImageRequest
 
 @Composable
 fun GifDetailContent(gif: GifModel) {
-    val imageUrl = gif.urls.originalUrl
-
     Column(
         modifier = Modifier
             .fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         AsyncImage(
-            model = imageUrl,
+            model = ImageRequest.Builder(LocalContext.current)
+                .data(gif.urls.originalUrl)
+                .decoderFactory(ImageDecoderDecoder.Factory())
+                .build(),
             contentDescription = gif.title,
             modifier = Modifier
                 .fillMaxWidth()
